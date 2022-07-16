@@ -1,0 +1,100 @@
+@media (max-width:1200px) {
+    .film-content, .collect-content{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .film__box, .collect__box{
+        margin-top: 20px;
+    }
+    
+}
+@media (max-width:992px) {
+    .series-content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5 250px);
+    }
+    .series__box:nth-child(1){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .series__box:nth-child(2){
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+@media (max-width:768px) {
+    .header__nav .container{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0; 
+    }
+    .header__logo{
+        justify-content: center;
+    }
+    .header__item{
+        padding: 15px;
+    }
+    .intro{
+        height: 500px;
+    }
+    .intro__title{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .intro__text{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .footer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__text{
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+@media (max-width:576px) {
+    .intro{
+        height: 380px;
+    }
+    .video__text, .video__title{
+        width: 100%;
+    }
+    .video__text{
+        margin: 25px 0 30px;
+    }
+    .intro__title{
+        text-align: center;
+        font-size: 30px;
+    }
+    .series-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5 250px);
+    }
+    .series__box:nth-child(1){
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .series__box:nth-child(2){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+@media (max-width:400px) {
+    .intro__button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .load-btn{
+        margin: 10px 0px 0px;
+    }
+    .header__list{
+        flex-wrap: wrap;
+    }
+    .collect__box{
+        width: 100%;
+        
+    }
+}
